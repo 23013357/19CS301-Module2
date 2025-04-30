@@ -204,7 +204,7 @@ multi(a,b,c)
 
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/f0c61287-b7a6-4c76-908d-396f4104d75b)
+![image](https://github.com/23013357/19CS301-Module2/blob/main/oo.png)
 
  
 
