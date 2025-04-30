@@ -1,36 +1,35 @@
 # 19CS301-Module2
-Exp.No:2(a)	ITERATIVE STATEMENTS- PRINTING N NATURAL NUMBERS
+Exp.No:2(a)	ITERATIVE STATEMENTS- PRINTING1 TO N EVEN NUMBERS
 ### AIM
-To create a python program for printing n natural numbers.
+To create a python program for printing 1 to n even numbers.
+
 ### ALGORITHM
 
 Step 1:	 Begin the program.
 
-Step 2:	 Use input() to read the value of n (the upper limit) from the user.
+Step 2:	 Get the input to an integer
 
-Step 3:	 Convert the input to an integer.
+Step 3:	 Use a for loop to iterate from 1 to n (inclusive).
 
-Step 4:	 Display the message "Natural Numbers are :".
+Step 4:	If number % 2 == 0 (i.e., the number is divisible by 2),Print the number.	 
 
-Step 5:	 Use a for loop to iterate from 1 to n (inclusive).
+Step 5:	 In each iteration, print the current value of i.
 
-Step 6:	 In each iteration, print the current value of i.
-
-Step 7:	 Terminate the program.
+Step 6:	 Terminate the program.
 
 ### PROGRAM
 ```
-n=int(input())
-print("Natural Numbers are :")
-for i in range(1,n+1,1):
-    print(i)
+Even = int(input())
+for number in range(1,Even+1):
+    if(number % 2 == 0):
+        print(number)
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/43ae22f0-fa7f-42b0-b99a-11d87aca3aed)
+![image](https://github.com/23013357/19CS301-Module2/blob/main/tt.png)
 
  
 ### RESULT
-Thus the python program for printing n natural numbers has been implemented and executed successfully.
+Thus the python program for printing 1 to n even numbers has been implemented and executed successfully.
 
 Exp.No:2(b)	FUNCTIONS-PERFECT NUMBER
 
