@@ -31,7 +31,7 @@ for number in range(1,Even+1):
 ### RESULT
 Thus the python program for printing 1 to n even numbers has been implemented and executed successfully.
 
-Exp.No:2(b)	FUNCTIONS-PERFECT NUMBER
+Exp.No:2(b)	FUNCTIONS-MEAN OF 3 NUMBERS
 
 ### AIM
 To write a Python Program to check if a number is a Perfect number using the concept of functions.
@@ -39,63 +39,65 @@ To write a Python Program to check if a number is a Perfect number using the con
 
 Step 1:	 Begin the program.
 
-Step 2:	 Read the number n from the user using input().
+Step 2:	Input the first number and store it in variable a.
 
-Step 3:	 Convert the input to an integer.
+Step 3:	 Input the second number and store it in variable b.
 
-Step 4:	 Define the Function perfectNumber(n) with below steps.
+Step 4:	 Input the third number and store it in variable c..
 
-Step 5:	 Initialize a variable factor_sum to 0
+Step 5:	 Calculate the sum: d = a + b + c.
 
-Step 6:	Iterate through all numbers from 1 to n//2 (as divisors of a number can't be greater than half of it).
+Step 6:	Calculate the mean: mean = d / 3.
 
-Step 7:	If a number i divides n perfectly (i.e., n % i == 0), add i to factor_sum.
+Step 7:	Display the value of mean.
 
-Step 8:	If factor_sum is equal to n, then print the number is a perfect number.Otherwise, print it's not a perfect number.
-
-Step 9:	 Terminate the program.
+Step 8:	 Terminate the program.
 ### PROGRAM
-```def perfectnumber(n):
-    factor_sum=0
-    for i in range(1,n//2+1):
-        if(n%i==0):
-            factor_sum+=i
-    if(n==factor_sum):
-        print("The number is a Perfect number!")	
-    else:
-        print("The number is not a Perfect number!")
-num=int(input())
-perfectnumber(num)
+```
+def result(a,b,c):
+    d=a+b+c
+    mean=(a+b+c)/3
+    
+    print(f"mean is {mean}")
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+
 ```
 ### OUTPUT
- ![image](https://github.com/user-attachments/assets/cc9562f9-e9f5-4989-82fc-6fcea0ec493f)
+ ![image](https://github.com/23013357/19CS301-Module2/blob/main/yy.png)
 
 ### RESULT
-Thus the python program to check if a number is a perfect number or not has been implemented and executed successfully.
+Thus the python program to steps to calculate the mean of three Numbers
+Start the program has been implemented and executed successfully.
 
-Exp.No:2(c)	BUILT-IN FUNCTIONS AND LAMBDA FUNCTIONS- RELATING TWO NUMBERS
+Exp.No:2(c)	BUILT-IN FUNCTIONS AND LAMBDA FUNCTIONS- CALCULATE THE EXPRESSION
 
 ### AIM
-To write a python program to check the relation between them. That is if one number is greater or equal or lesser than another number using the lambda function.
+To write a  program in Python to calculate the value of the following expression by using lambda function.
 ### ALGORITHM
 
 Step 1:	 Begin the program.
 
-Step 2:	 Use eval() to get the two numbers (num1 and num2) from the user.
+Step 2:	 Use eval() to get the three numbers (num1,num2 and num2) from the user.
 
-Step 3:	 Define a lambda function res that takes two arguments x and y
+Step 3:	 Define a lambda function res that takes three arguments x,y and z.
 
-Step 4:	 The lambda function compares the numbers and prints which one is smaller: If x > y, it prints num2 is smaller than num1. Otherwise, it prints num1 is smaller than num2.
+Step 4:	 Define an expression: (x / 10) * (y / 2) * z.
 
-Step 5:	 Call the res Function: Pass num1 and num2 to the lambda function to perform the comparison.
+Step 5:	 Display the result.
 
 Step 6:	 Terminate the program.
 ### PROGRAM
-```num1=eval(input())
-num2=eval(input())
-max=lambda x,y: print(f"{num2} is smaller than {num1}") if x>y else print(f"{num1} is smaller than {num2}")![image](https://github.com/user-attachments/assets/4a3ccdb3-e831-41b8-b783-4f58c664521e)
+```
+x=int(input())
+y=int(input())
+z=int(input())
 
-max(num1,num2)
+expr = lambda x, y, z: (x/10) * (y/2) * z
+print(expr(x, y, z))
 ```
 ### OUTPUT
 ![image](https://github.com/user-attachments/assets/d6767aa8-b158-4f19-83f6-af03322a5b9d)
