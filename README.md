@@ -113,36 +113,27 @@ Exp.No:2(d)	LOOPING PATTERNS- PRINTING PATTERN
 To write a python program to print the triangular star pattern.
 ### ALGORITHM
 
-Step 1:	 Begin the program.
+step 1:Start the program.
 
-Step 2:	 Read the integer n from the user using input(). This will determine the number of rows in the pattern.
+step 2:Input the number of rows (integer) and store it in variable rows.
 
-Step 3:	 Initialize a variable i = 0. This will be used to control the number of spaces before the stars.
+step 3:Start a loop to iterate from i = 0 to i = rows - 1:
 
-Step 4:	 Loop through rows from 0 to n-1 (this will iterate n times to print the required rows).
+step 4:For each i (representing the current row number):
 
-Step 5:	  For each row, calculate the number of spaces before the stars. 
+step 5:Start a nested loop to iterate from j = 0 to j = i:
 
-Step 6:	 The formula for the number of spaces is ((n - rows - 1) * 2) + i. 
+step 6:Print a star (*) followed by a space on the same line.
 
-Step 7:	 Print the spaces (" ") using the print(" ", end="") statement. 
+step 7:After completing the inner loop for each row, print a newline to move to the next row.
 
-Step 8:	 Increment i by 1 after each row.
-
-Step 9:	 For each row, print the stars. The number of stars for each row is equal to rows + 1. Print the stars with print("*", end=" ") to separate them with two spaces.
-
-Step 10:	 After printing each row's stars, print a newline to move to the next row using print("").
-
-Step 11:	 Terminate the program.
+step 8:End the program.
 ### PROGRAM
-```n=int(input())
-i=0
-for rows in range(0,n):
-    for cols in range(((n-rows-1)*2)+i):
-        print(" ",end="")
-    i+=1
-    for star in range(rows+1):
-        print("*",end="  ")
+```
+rows=int(input())
+for i in range(0, rows):
+    for j in range(0, i+1):
+        print("*", end=' ')
     print("")
 ```
 ### OUTPUT
