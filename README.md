@@ -100,11 +100,11 @@ expr = lambda x, y, z: (x/10) * (y/2) * z
 print(expr(x, y, z))
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/d6767aa8-b158-4f19-83f6-af03322a5b9d)
+![image](https://github.com/23013357/19CS301-Module2/blob/main/uu.png)
 
 
 ### RESULT
-Thus the python program to check a relationship between two numbers has been implemented and executed successfully.
+Thus the python program to checking the expression has been implemented and executed successfully.
 
 
 Exp.No:2(d)	LOOPING PATTERNS- PRINTING PATTERN
