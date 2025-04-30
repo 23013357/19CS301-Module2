@@ -137,7 +137,7 @@ for i in range(0, rows):
     print("")
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/97a7d6f9-97f1-44e6-a8b1-2c110a717d1c)
+![image](https://github.com/23013357/19CS301-Module2/blob/main/ii.png)
 
 
  
@@ -170,25 +170,38 @@ Thus the python program to print the triangular start pattern has been implement
 Exp.No:2(e)	SEB- COMPUTING POWER
 
 ### AIM
-To write a python Program to compute the power of the given number using appropriate built -in function .
+To write a function which takes three arguments: a and b and c and returns the multiplication  of them: a*b*c. Assign it to a variable named: f. using python
 ### ALGORITHM
 
-Step 1:	 Begin the program.
+Step 1:	 Start the program.
 
-Step 2:	 Input the base number (base) from the user.
+Step 2:	 Input the first number and store it in variable a.
 
-Step 3:	 Input the exponent number (exp) from the user.
+Step 3:	 Input the second number and store it in variable b.
 
-Step 4:	 Use the built-in pow() function to compute the  base raised to the power of exp.
+Step 4:	 Input the third number and store it in variable c.
 
-Step 5:	 Print the result using the print() function, displaying the power of the given number in a formatted manner.
+Step 5:	 Define the function multi(a, b, c):
 
-Step 6:	 Terminate the program.
+Step 6:	 Inside the function, calculate the product of a, b, and c, and store the result in k.
+
+Step 7:	 Print the value of k.
+
+Step 8:	 Call the function multi(a, b, c) with the input values.
+
+Step 9:	 End the program.
+
 ### PROGRAM
-```base=int(input())
-exp=int(input())
-res=pow(base,exp)
-print(f"Power of the given number is: {res}")
+```
+def multi(a,b,c):
+    k=a*b*c
+    print(k)
+    
+a=int(input())
+b=int(input())
+c=int(input())
+multi(a,b,c)
+
 ```
 ### OUTPUT
 ![image](https://github.com/user-attachments/assets/f0c61287-b7a6-4c76-908d-396f4104d75b)
@@ -196,7 +209,7 @@ print(f"Power of the given number is: {res}")
  
 
 ### RESULT
-Thus the python program to compute the power using builtin function has been implemented and executed successfully.
+Thus the function which takes three arguments: a and b and c and returns the multiplication  of them: a*b*c. Assign it to a variable named: f. using python has been implemented and executed successfully.
 
 
 
